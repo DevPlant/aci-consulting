@@ -1,0 +1,9 @@
+/*To apply styles only to this component prefix everything with the component tag name, in this case "aci-home"*/
+aci-home section {
+    width: 600px;
+    margin: 0 auto;
+}
+
+aci-home h1{
+    color: blue;
+}
