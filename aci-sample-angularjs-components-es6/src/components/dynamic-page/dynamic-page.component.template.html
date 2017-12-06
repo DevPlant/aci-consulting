@@ -1,0 +1,29 @@
+<section>
+
+    <p>Select a page to load ( page id )</p>
+    <input type="number" ng-model="$ctrl.pageId">
+
+    <button ng-click="$ctrl.loadPage()">Load Page</button>
+
+    <div ng-if="$ctrl.error">
+        {{$ctrl.error}}
+    </div>
+
+    <div ng-if="$ctrl.page">
+        <h1>{{$ctrl.page.name}}</h1>
+        <section ng-repeat="section in $ctrl.page.sections">
+            <h3>{{section.title}}</h3>
+            <h5>{{section.subTitle}}</h5>
+            <div ng-repeat="panel in section.panels" ng-style="{'border': panel.border}">
+
+                <h3>{{panel.title}}</h3>
+                <div ng-repeat="field in panel.fields">
+                    <label for="{{field.name}}">{{field.label}}</label>
+                    <input type="{{field.type}}" id="{{field.name}}">
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+</section>
