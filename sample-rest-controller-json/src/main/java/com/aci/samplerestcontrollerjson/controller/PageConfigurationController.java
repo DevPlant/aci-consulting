@@ -2,6 +2,7 @@ package com.aci.samplerestcontrollerjson.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import com.aci.samplerestcontrollerjson.exception.AciObjectNotFoundException;
 import com.aci.samplerestcontrollerjson.repository.PageRepository;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api")
 public class PageConfigurationController {
 

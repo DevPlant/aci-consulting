@@ -19,7 +19,7 @@
                 <h3>{{panel.title}}</h3>
                 <div ng-repeat="field in panel.fields">
                     <label for="{{field.name}}">{{field.label}}</label>
-                    <input type="{{field.type}}" id="{{field.name}}">
+                    <input type="{{field.fieldType.toLowerCase()}}" id="{{field.name}}">
 
                 </div>
             </div>

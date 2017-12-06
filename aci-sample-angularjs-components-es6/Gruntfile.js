@@ -79,16 +79,16 @@ module.exports = function (grunt) {
                     base: 'build',
                     open: true
                 }
-            },
-            proxies: [
-                {
-                    context: '/api/**',
-                    host: 'localhost',
-                    port: 8080,
-                    https: false,
-                    xforward: false
-                }
-            ]
+            }
+            // proxies: [
+            //     {
+            //         context: '/api/**',
+            //         host: 'localhost',
+            //         port: 8080,
+            //         https: false,
+            //         xforward: false
+            //     }
+            // ]
         },
 
         // karma

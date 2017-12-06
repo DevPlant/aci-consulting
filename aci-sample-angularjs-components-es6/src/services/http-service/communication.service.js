@@ -8,7 +8,7 @@ export default class CommunicationService {
 
 
     getPageById(pageId) {
-        return this.$http.get(`/api/page/${pageId}`).then((response) => {
+        return this.$http.get(`http://localhost:8080/api/page/${pageId}`).then((response) => {
             return response.data;
         }).catch((error) => {
             this.$log.error('XHR Failed for getPageById:' + JSON.stringify(error));
