@@ -10,6 +10,7 @@ import javax.persistence.MapsId;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.aci.uimanagement.model.types.FieldRendererType;
 import com.aci.uimanagement.model.types.FieldType;
 
 import lombok.Data;
@@ -29,6 +30,8 @@ public class FieldEntity {
     private ViewElementEntity viewElement;
 
     private String width;
+    @Enumerated(EnumType.STRING)
+    private FieldRendererType fieldRendererType;
     protected String name;
     protected String labelTranslationKey;
 

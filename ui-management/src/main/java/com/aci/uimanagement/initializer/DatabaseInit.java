@@ -23,6 +23,7 @@ import com.aci.uimanagement.initializer.repository.OverrideElementValueRepositor
 import com.aci.uimanagement.initializer.repository.ViewElementRepository;
 import com.aci.uimanagement.initializer.repository.ViewFragmentRepository;
 import com.aci.uimanagement.model.types.ElementType;
+import com.aci.uimanagement.model.types.FieldRendererType;
 import com.aci.uimanagement.model.types.FieldType;
 import com.aci.uimanagement.model.types.LayoutType;
 import com.aci.uimanagement.model.types.OverrideType;
@@ -173,6 +174,7 @@ public class DatabaseInit implements CommandLineRunner {
         field1.setWidth("160px");
         field1.setLabelTranslationKey("field1.translation.key");
         field1.setName("Field 1");
+        field1.setFieldRendererType(FieldRendererType.TEXT);
         field1.setFieldType(FieldType.STRING);
         field1Element.setFieldEntity(field1);
         field1Element = viewElementRepository.save(field1Element);
@@ -186,6 +188,7 @@ public class DatabaseInit implements CommandLineRunner {
         field2.setViewElement(field2Element);
         field2.setWidth("160px");
         field2.setFieldType(FieldType.LONG);
+        field2.setFieldRendererType(FieldRendererType.LINK);
         field2.setLabelTranslationKey("field2.translation.key");
         field2.setName("Field 2");
         field2Element.setFieldEntity(field2);

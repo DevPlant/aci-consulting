@@ -1,5 +1,6 @@
 package com.aci.uimanagement.database.model;
 
+import com.aci.uimanagement.model.types.FieldRendererType;
 import com.aci.uimanagement.model.types.FieldType;
 
 import lombok.Data;
@@ -15,6 +16,7 @@ public class FieldDatabaseModel extends ViewElementDatabaseModel{
 
     private String width;
     private FieldType fieldType;
+    private FieldRendererType fieldRendererType;
     protected String name;
     protected String labelTranslationKey;
 

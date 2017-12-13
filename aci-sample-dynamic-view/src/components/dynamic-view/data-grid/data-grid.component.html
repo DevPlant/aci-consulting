@@ -10,8 +10,8 @@
     <tbody>
     <tr ng-repeat="data in $dataGridCtrl.data">
         {{data}}
-        <td ng-repeat="column in data">
-            {{column}}
+        <td ng-repeat="column in data track by $index">
+            <field-renderer value="column" type="$dataGridCtrl.viewData.children[$index].fieldRendererType"/>
         </td>
     </tr>
     </tbody>
