@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/acidb
+    username: aci-user
+    password: aci-password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+
+
+      # http://bit.ly/aci-dev
+
+logging.level.org.hibernate.tool: DEBUG
+
+server.port: 8081

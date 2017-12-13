@@ -1,0 +1,101 @@
+{  
+   "id":1,
+   "name":"view1",
+   "layoutType":"COLUMN",
+   "children":[  
+      {  
+         "viewElementId":2,
+         "elementOrder":1,
+         "visible":true,
+         "metadataDriven":true,
+         "name":"First Tab",
+         "labelTranslationKey":"tab_key",
+         "angularComponentName":"tab",
+         "elementType":"TAB",
+         "layoutType":"ROW",
+         "children":[  
+            {  
+               "viewElementId":5,
+               "elementOrder":1,
+               "visible":true,
+               "metadataDriven":true,
+               "name":"First Accordion",
+               "labelTranslationKey":"accordion_key",
+               "angularComponentName":"accordion",
+               "elementType":"ACCORDION",
+               "layoutType":"ROW",
+               "children":[  
+
+               ]
+            }
+         ]
+      },
+      {  
+         "viewElementId":3,
+         "elementOrder":1,
+         "visible":true,
+         "metadataDriven":true,
+         "name":"Second Tab",
+         "labelTranslationKey":"tab_key",
+         "angularComponentName":"tab",
+         "elementType":"TAB",
+         "layoutType":"ROW",
+         "children":[  
+            {  
+               "viewElementId":4,
+               "elementOrder":1,
+               "visible":true,
+               "metadataDriven":true,
+               "name":"First Panel",
+               "labelTranslationKey":"panel_key",
+               "angularComponentName":"panel",
+               "elementType":"PANEL",
+               "layoutType":"ROW",
+               "children":[  
+                  {  
+                     "viewElementId":6,
+                     "elementOrder":1,
+                     "visible":true,
+                     "metadataDriven":true,
+                     "name":"First Grid",
+                     "labelTranslationKey":"accordion_key",
+                     "angularComponentName":"grid",
+                     "elementType":"GRID",
+                     "layoutType":"ROW",
+                     "children":[  
+                        {  
+                           "viewElementId":7,
+                           "elementOrder":1,
+                           "visible":true,
+                           "metadataDriven":true,
+                           "name":"field 1",
+                           "labelTranslationKey":"field_key",
+                           "angularComponentName":"field",
+                           "elementType":"FIELD",
+                           "layoutType":"ROW",
+                           "children":[  
+
+                           ]
+                        },
+                        {  
+                           "viewElementId":8,
+                           "elementOrder":1,
+                           "visible":true,
+                           "metadataDriven":true,
+                           "name":"field 2",
+                           "labelTranslationKey":"field_key",
+                           "angularComponentName":"field",
+                           "elementType":"FIELD",
+                           "layoutType":"ROW",
+                           "children":[  
+
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

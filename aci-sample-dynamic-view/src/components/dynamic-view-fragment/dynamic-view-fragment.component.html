@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>{{$dynamicViewCtrl.viewData.name}}</h1>
+    <div ng-class="$dynamicViewCtrl.viewData.layoutType.toLowerCase()">
+        <div ng-repeat="child in $dynamicViewCtrl.viewData.children">
+            <dynamic-render model="child"></dynamic-render>
+            <hr/>
+        </div>
+    </div>
+</div>

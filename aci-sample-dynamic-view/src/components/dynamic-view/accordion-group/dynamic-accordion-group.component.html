@@ -1,0 +1,6 @@
+<uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group ng-repeat="accordion in $accordionGroupCtrl.viewData.children"
+         heading="{{accordion.name}}">
+        <dynamic-render model="child" ng-repeat="child in accordion.children"></dynamic-render>
+    </div>
+</uib-accordion>

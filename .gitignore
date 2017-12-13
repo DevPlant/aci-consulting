@@ -60,3 +60,5 @@ typings/
 target/
 *.class
 
+.DS_Store/
+.DS_Store

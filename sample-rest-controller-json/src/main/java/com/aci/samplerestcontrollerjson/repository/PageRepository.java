@@ -11,4 +11,5 @@ public interface PageRepository extends JpaRepository<PageEntity, Long> {
 
     @Query("Select p from PageEntity p where p.name = ?1")
     PageEntity findByNameUsingJPAQuery(String name);
+
 }

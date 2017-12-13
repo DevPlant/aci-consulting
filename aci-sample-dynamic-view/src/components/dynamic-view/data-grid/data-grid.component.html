@@ -1,0 +1,18 @@
+<table>
+    <thead>
+    <tr>
+        <td ng-repeat="child in $dataGridCtrl.viewData.children">
+            {{child.name}}
+        </td>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr ng-repeat="data in $dataGridCtrl.data">
+        {{data}}
+        <td ng-repeat="column in data">
+            {{column}}
+        </td>
+    </tr>
+    </tbody>
+</table>

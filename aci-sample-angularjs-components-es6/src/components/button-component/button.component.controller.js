@@ -5,9 +5,9 @@ export default class ButtonComponentController {
     constructor(ScopeCopyService, $scope) {
         this.ScopeCopyService = ScopeCopyService;
         this.scope = $scope;
-        this.buttonProperties = {
+        this.emfButtonProperties = {
             action: this.onButtonClicked,
-            label: 'Hello World'
+            label: 'Next Alert'
         };
     }
 
@@ -18,7 +18,7 @@ export default class ButtonComponentController {
 
     $onInit() {
         console.log('onInit Called! Properties are now copied to $scope');
-        this.ScopeCopyService.assignObjectPropertiesToScope(this.buttonProperties, this.scope);
+        this.ScopeCopyService.assignObjectPropertiesToScope(this.emfButtonProperties, this.scope);
     }
 
 

@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="aci-app">
+<head>
+    <title>Aci Dynamic View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        td, tr, th table {
+            padding: 12px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<view-fragment view-name="'view1'"></view-fragment>
+
+<script src="src/app.js"></script>
+<script src="src/services/http-service/communication.service.js"></script>
+<script src="src/components/dynamic-view-fragment/dynamic-view-fragment.component.js"></script>
+<script src="src/components/dynamic-view/tab-group/dynamic-tab-group.component.js"></script>
+<script src="src/components/dynamic-view/field/field.component.js"></script>
+<script src="src/components/dynamic-view/grid/grid.component.js"></script>
+<script src="src/components/dynamic-view/data-grid/data-grid.component.js"></script>
+<script src="src/components/dynamic-view/accordion-group/dynamic-accordion-group.component.js"></script>
+<script src="src/directives/render-dynamic-component.directive.js"></script>
+<script src="src/components/static/custom-panel/custom-panel.component.js"></script>
+</body>
+</html>
