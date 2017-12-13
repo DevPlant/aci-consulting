@@ -5,97 +5,133 @@
    "children":[  
       {  
          "viewElementId":2,
-         "elementOrder":1,
-         "visible":true,
-         "metadataDriven":true,
-         "name":"First Tab",
-         "labelTranslationKey":"tab_key",
-         "angularComponentName":"tab",
-         "elementType":"TAB",
-         "layoutType":"ROW",
+         "elementType":"TAB_GROUP",
          "children":[  
             {  
-               "viewElementId":5,
-               "elementOrder":1,
-               "visible":true,
-               "metadataDriven":true,
-               "name":"First Accordion",
-               "labelTranslationKey":"accordion_key",
-               "angularComponentName":"accordion",
-               "elementType":"ACCORDION",
-               "layoutType":"ROW",
-               "children":[  
-
-               ]
-            }
-         ]
-      },
-      {  
-         "viewElementId":3,
-         "elementOrder":1,
-         "visible":true,
-         "metadataDriven":true,
-         "name":"Second Tab",
-         "labelTranslationKey":"tab_key",
-         "angularComponentName":"tab",
-         "elementType":"TAB",
-         "layoutType":"ROW",
-         "children":[  
-            {  
-               "viewElementId":4,
-               "elementOrder":1,
-               "visible":true,
-               "metadataDriven":true,
-               "name":"First Panel",
-               "labelTranslationKey":"panel_key",
-               "angularComponentName":"panel",
-               "elementType":"PANEL",
-               "layoutType":"ROW",
+               "viewElementId":3,
+               "elementType":"TAB",
                "children":[  
                   {  
-                     "viewElementId":6,
-                     "elementOrder":1,
-                     "visible":true,
-                     "metadataDriven":true,
-                     "name":"First Grid",
-                     "labelTranslationKey":"accordion_key",
-                     "angularComponentName":"grid",
+                     "viewElementId":9,
                      "elementType":"GRID",
-                     "layoutType":"ROW",
                      "children":[  
                         {  
-                           "viewElementId":7,
-                           "elementOrder":1,
-                           "visible":true,
-                           "metadataDriven":true,
-                           "name":"field 1",
-                           "labelTranslationKey":"field_key",
-                           "angularComponentName":"field",
+                           "viewElementId":11,
                            "elementType":"FIELD",
-                           "layoutType":"ROW",
                            "children":[  
 
-                           ]
+                           ],
+                           "elementOrder":3,
+                           "width":"142px",
+                           "name":"Field 1",
+                           "labelTranslationKey":"field1.translation.key",
+                           "fieldType":"MONEY"
+                        }
+                     ],
+                     "elementOrder":0,
+                     "dataUrl":"https://data.url",
+                     "name":"Grid 1",
+                     "labelTranslationKey":"grid1.translation.key",
+                     "columnCount":0
+                  }
+               ],
+               "elementOrder":0,
+               "name":"Tab 1",
+               "labelTranslationKey":"tab1.translation.key",
+               "layoutType":"ROW"
+            },
+            {  
+               "viewElementId":4,
+               "elementType":"TAB",
+               "children":[  
+                  {  
+                     "viewElementId":5,
+                     "elementType":"PANEL",
+                     "children":[  
+
+                     ],
+                     "elementOrder":0,
+                     "angularComponentName":"custom-panel"
+                  }
+               ],
+               "elementOrder":0,
+               "name":"Tab 2",
+               "labelTranslationKey":"tab2.translation.key",
+               "layoutType":"COLUMN"
+            }
+         ],
+         "elementOrder":0
+      },
+      {  
+         "viewElementId":6,
+         "elementType":"ACCORDION_GROUP",
+         "children":[  
+            {  
+               "viewElementId":7,
+               "elementType":"ACCORDION",
+               "children":[  
+                  {  
+                     "viewElementId":5,
+                     "elementType":"PANEL",
+                     "children":[  
+
+                     ],
+                     "elementOrder":0,
+                     "angularComponentName":"custom-panel"
+                  }
+               ],
+               "elementOrder":0,
+               "name":"Accordion 1",
+               "labelTranslationKey":"acc1.translation.key",
+               "layoutType":"ROW"
+            },
+            {  
+               "viewElementId":8,
+               "elementType":"ACCORDION",
+               "children":[  
+                  {  
+                     "viewElementId":10,
+                     "elementType":"DATA_GRID",
+                     "children":[  
+                        {  
+                           "viewElementId":12,
+                           "elementType":"FIELD",
+                           "children":[  
+
+                           ],
+                           "elementOrder":0,
+                           "width":"160px",
+                           "name":"Field 2",
+                           "labelTranslationKey":"field2.translation.key",
+                           "fieldType":"LONG"
                         },
                         {  
-                           "viewElementId":8,
-                           "elementOrder":1,
-                           "visible":true,
-                           "metadataDriven":true,
-                           "name":"field 2",
-                           "labelTranslationKey":"field_key",
-                           "angularComponentName":"field",
+                           "viewElementId":11,
                            "elementType":"FIELD",
-                           "layoutType":"ROW",
                            "children":[  
 
-                           ]
+                           ],
+                           "elementOrder":3,
+                           "width":"142px",
+                           "name":"Field 1",
+                           "labelTranslationKey":"field1.translation.key",
+                           "fieldType":"MONEY"
                         }
-                     ]
+                     ],
+                     "elementOrder":0,
+                     "dataUrl":"https://data.url",
+                     "name":"Data Grid 1",
+                     "labelTranslationKey":"grid1.translation.key",
+                     "columnCount":0
                   }
-               ]
+               ],
+               "elementOrder":0,
+               "name":"Accordion 2",
+               "labelTranslationKey":"acc2.translation.key",
+               "layoutType":"COLUMN"
             }
-         ]
+         ],
+         "elementOrder":0
       }
    ]
 }
