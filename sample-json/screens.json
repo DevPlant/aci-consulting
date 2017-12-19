@@ -1,0 +1,16 @@
+{
+  "screens" : [
+    {
+      "name" : "screen1",
+      "label" : "some value ...",
+      "tabs" : [
+        {"name":"tab1"}
+      ]
+    },
+    {
+      "name" : "screen1",
+      "label" : "some value ...",
+
+    }
+  ]
+}

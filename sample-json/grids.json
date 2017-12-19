@@ -1,0 +1,14 @@
+{
+  "grids" : [
+    {
+      "name" : "grid1",
+      "label" : "some value ...",
+
+    },
+    {
+      "name" : "grid2",
+      "label" : "some value ...",
+
+    }
+  ]
+}
